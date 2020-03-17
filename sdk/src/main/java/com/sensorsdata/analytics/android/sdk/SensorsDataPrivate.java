@@ -168,6 +168,7 @@ import java.util.Map;
      */
     @TargetApi(14)
     public static void registerActivityLifecycleCallbacks(Application application) {
+//         ActivityTaskView app 中也使用了 application.registerActivityLifecycleCallbacks。
         application.registerActivityLifecycleCallbacks(new Application.ActivityLifecycleCallbacks() {
             @Override
             public void onActivityCreated(Activity activity, Bundle bundle) {

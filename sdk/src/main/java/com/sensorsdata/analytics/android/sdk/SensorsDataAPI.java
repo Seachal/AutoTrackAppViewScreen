@@ -38,6 +38,10 @@ public class SensorsDataAPI {
         return INSTANCE;
     }
 
+    /**
+     * 注册，
+     * @param application
+     */
     private SensorsDataAPI(Application application) {
         mDeviceId = SensorsDataPrivate.getAndroidID(application.getApplicationContext());
         mDeviceInfo = SensorsDataPrivate.getDeviceInfo(application.getApplicationContext());
